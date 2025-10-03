@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Letras al azar</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="app" aria-labelledby="app-title">
+    <h1 id="app-title" class="sr-only">Letras al azar sin repetición</h1>
+    <h2 class="titulo">Tutti Frutti.Web</h2>
+    <section class="stage" aria-live="polite" aria-atomic="true">
+      <div id="display" class="display" role="status" aria-label="Elemento mostrado">0</div>
+      <p id="counter" class="counter" aria-live="polite">Quedan: 26</p>
+    </section>
+
+    <section class="controls">
+      <button id="nextBtn" class="btn btn-primary" type="button" aria-label="Mostrar siguiente letra">
+        Mostrar letra
+      </button>
+      <button id="resetBtn" class="btn btn-secondary" type="button" aria-label="Reiniciar a cero">
+        Reiniciar
+      </button>
+    </section>
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
